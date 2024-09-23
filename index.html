@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aerith Gaisborough</title>
+    <meta name="author" content="Author" />
+    <meta name="description" content="Website description" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+      html,
+        body{
+          background: url(images/flowerybackground.jpg);
+          text-align: center;
+          
+
+        }
+
+        h1{
+          font-family: "Sofia", cursive;
+          font-size: 60px;
+          color: magenta;
+          -webkit-text-stroke: 1px black;
+          align-content: center;
+          
+
+        }
+        #subtitle{
+          font-family:"Playwrite CU";
+          color: lightpink;
+          font-size: xx-large;
+          -webkit-text-stroke: 1px black;
+        }
+
+
+        h2, h3{
+
+          font-family:"Matemasie";
+          color: lightpink;
+          -webkit-text-stroke: 1px black;
+          font-size: xx-large;
+
+          
+
+
+        }
+        .spoiler{
+          color: red;
+          position: relative;
+        }
+        
+        .spoiler::after{
+          content: "See spoiler!!";
+          background: black;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+        .spoiler:hover::after{
+          opacity: 0;
+          
+        }
+
+        main, footer{
+          background-color: rgb(250, 250, 250,0.7);
+          color: black;
+          align-items: center;
+          
+        }
+        
+        img{
+          width: 50%;
+          height: 50%;
+          
+        }
+        
+        p{
+          font-size: large;
+        }
+          
+        
+        #cursor{
+        width: 40px;
+        height: 66px;
+        background: url(images/littleaerith.webp);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        translate: -50% -50%;
+        
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Aerith Gaisborough</h1>
+      <p id="subtitle">Just a page talking about video games' favorite flower girl.</p>
+    </header>
+
+    <main>
+      <h2>Character description</h2>
+      <p> Aerith is one of the protagonists of Final Fantasy VII. A half-Cetra human and the last Cetra. A kind girl with powers that has Shinra tracking her, so they can use her powers to lead them to the Promised Land. After meeting Cloud Strife, she accompanies him in his quest to take Shinra and Sephiroth down.  </p>
+
+      <h2>Personality</h2>
+      <p>Aerith is kind, upbeat, and compassionate. Always seeing the good in people but at the same time recognizes true evil such as Shinra and Sephiroth. She has an easy time making friends as is shown with Marlene, Tifa, and a ghost that appears in Final Fantasy VII Remake part 1. She loves nature and commune with it.  </p>
+
+      <h3>Limit Breaks</h3>
+      <ol>
+        <li>Healing Wind: Heals allies</li>
+        <li>Fury Brand: Improve characters Limit Breaks</li>
+        <li>Seal Evil: Freezes enemies and add the Silence status effect, which phrohibits enemies to cast a spell. </li>
+        <li>Great Gospel: Fully restore party members' HP and MP, as well removes negative status effects.  </li>
+      </ol>
+
+      <h3>Trivia</h3>
+      <ul>
+        <li> Aerith and Sephiroth were suppossed to be siblings, then Lovers, then nothing in the final version of the game.</li>
+        <li><span class="spoiler">Aerith's death</span> is considered one of the most impacting moments in gaming history.  </li>
+        <li>Aerith is playful or somewhat flirty with Cloud, and the young man isn't harsh with her in comparison with other characters such as Jessie Rasberry. </li>
+        <li>"If Aerith is in the final battle, Sephiroth says "Can you not see your future? What hope have you? You cannot change it."" (Final Fantasy Wiki, Annotations)</li>
+        <li>Due to poor conversions to the English language,her height was 5ft3in while she is around 5ft3in or 5ft4in. </li>
+        <li>First, her name was Aeris in the original English release but in subsequent releases it has been changed to Aerith.</li>
+      </ul>
+
+      <h3>Pictures!</h3>
+
+      <img src="images/Aerith.webp" alt="Description" />
+      <p>Aerith as she appears in Final Fantasy VII Remake.</p>
+      <img src="images/aerithoriginal.webp" alt="">
+      <p>Aerith as she appears in the Original Final Fantasy VII.</p>
+      <img src="images/aerithsephiroth.webp" alt="Description" />
+      <p>Yoshitaka Amano's sketch depicting Aerith and Sephiroth.</p>
+      <img src="images/babyaerith.webp" alt="Description" />
+      <p>Young Aerith as she appears in Final Fantasy VII Remake.</p>
+      <img src="images/froggy.webp" alt="">
+      <p>Aerith in the frog state as she appears in the Remake.</p>
+    </main>
+
+    <footer>
+      <p>This is a fanpage and is not affiliated to Square Enix. The character belongs to Square Enix. Information and photos taken from <a href="https://finalfantasy.fandom.com/wiki/Aerith_Gainsborough">Final Fantasy Wiki</a></p>
+    </footer>
+    <div id="cursor"></div>
+    <script>
+      function move(event){
+        cursor.style.left = event.x + "px";
+        cursor.style.top = event.y + "px";
+  
+        
+        console.log(event.x, event.y);
+  
+      }
+      window.onmousemove = move;
+    </script>
+
+  </body>
+</html>
