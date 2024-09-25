@@ -13,12 +13,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
         @import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
-      html,
+      
         body{
           background: url(images/flowerybackground.jpg);
-          text-align: center;
           
-
         }
 
         h1{
@@ -26,15 +24,24 @@
           font-size: 60px;
           color: magenta;
           -webkit-text-stroke: 1px black;
-          align-content: center;
-          
+          text-align: center;
 
         }
+
+        #introimage{
+          height: 20%;
+          width: 20%;
+          display: block;
+          margin: auto;
+        }
+
+
         #subtitle{
           font-family:"Playwrite CU";
           color: lightpink;
           font-size: xx-large;
           -webkit-text-stroke: 1px black;
+          text-align: center;
         }
 
 
@@ -78,6 +85,8 @@
         img{
           width: 50%;
           height: 50%;
+          border-style: "●∘◦❀◦∘●✧༺♥༻∞";
+          border-color: black;
           
         }
         
@@ -94,8 +103,54 @@
         top: 0px;
         left: 0px;
         translate: -50% -50%;
+        pointer-events: none;
         
       }
+
+      .side-by-side {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        margin: 100px;
+
+       
+      }
+      #personality, #trivias{
+         position: relative;
+         left: 150px;
+        
+
+      }
+      
+      ul, ol{
+        list-style: "●∘◦❀◦∘●";
+      }
+
+      #image{
+        width: 80%;
+        height: 80%;
+      }
+
+      .imageanddesc{ 
+        display: flex;
+        font-size: large;
+       }
+
+       #image{
+        position: relative;
+        left: 100px;
+       }
+      #desc{
+        position: relative;
+        right: 200px;
+      }
+
+      #images{
+        position: relative;
+        left: 250px;
+        right: -250px;
+      }
+
       
     </style>
     
@@ -104,45 +159,66 @@
     <header>
       <h1>Aerith Gaisborough</h1>
       <p id="subtitle">Just a page talking about video games' favorite flower girl.</p>
+      <img src="images/aerithbust.webp" id="introimage" alt="">
     </header>
 
     <main>
-      <h2>Character description</h2>
-      <p> Aerith is one of the protagonists of Final Fantasy VII. A half-Cetra human and the last Cetra. A kind girl with powers that has Shinra tracking her, so they can use her powers to lead them to the Promised Land. After meeting Cloud Strife, she accompanies him in his quest to take Shinra and Sephiroth down.  </p>
 
-      <h2>Personality</h2>
-      <p>Aerith is kind, upbeat, and compassionate. Always seeing the good in people but at the same time recognizes true evil such as Shinra and Sephiroth. She has an easy time making friends as is shown with Marlene, Tifa, and a ghost that appears in Final Fantasy VII Remake part 1. She loves nature and commune with it.  </p>
+      <div class="side-by-side">
 
-      <h3>Limit Breaks</h3>
-      <ol>
-        <li>Healing Wind: Heals allies</li>
-        <li>Fury Brand: Improve characters Limit Breaks</li>
-        <li>Seal Evil: Freezes enemies and add the Silence status effect, which phrohibits enemies to cast a spell. </li>
-        <li>Great Gospel: Fully restore party members' HP and MP, as well removes negative status effects.  </li>
-      </ol>
+        <div>
+          <h2>Character description</h2>
+          <p> Aerith is one of the protagonists of Final Fantasy VII. A half-Cetra human and the last Cetra. A kind girl with powers that has Shinra tracking her, so they can use her powers to lead them to the Promised Land. After meeting Cloud Strife, she accompanies him in his quest to take Shinra and Sephiroth down.  </p>
+        </div>
+        <div id="personality">
+          <h2>Personality</h2>
+          <p>Aerith is kind, upbeat, and compassionate. Always seeing the good in people but at the same time recognizes true evil such as Shinra and Sephiroth. She has an easy time making friends as is shown with Marlene, Tifa, and a ghost that appears in Final Fantasy VII Remake part 1. She loves nature and commune with it.  </p>
+        </div>
+      </div>
+      <div class="imageanddesc">
+        <div id="image"><img src="images/ghostandaerith.webp" alt=""></div>
+        <ul id="desc">
+          <li> Scene showing Aerith making friends with a ghost.</li>
+        </ul>
+      </div>
+     <div class="side-by-side">
+        <div id="limits">
+          <h3 id="limit">Limit Breaks</h3>
+          <ol>
+            <li>Healing Wind: Heals allies</li>
+            <li>Fury Brand: Improve characters Limit Breaks</li>
+            <li>Seal Evil: Freezes enemies and add the Silence status effect, which phrohibits enemies to cast a spell. </li>
+            <li>Great Gospel: Fully restore party members' HP and MP, as well removes negative status effects.  </li>
+          </ol>
+        </div>
+      
+        <div id="trivias">
+          <h3 id="trivia">Trivia</h3>
+          <ul>
+            <li> Aerith and Sephiroth were suppossed to be siblings, then Lovers, then nothing in the final version of the game.</li>
+            <li><span class="spoiler">Aerith's death</span> is considered one of the most impacting moments in gaming history.  </li>
+            <li>Aerith is playful or somewhat flirty with Cloud, and the young man isn't harsh with her in comparison with other characters such as Jessie Rasberry. </li>
+            <li>"If Aerith is in the final battle, Sephiroth says "Can you not see your future? What hope have you? You cannot change it."" (Final Fantasy Wiki, Annotations)</li>
+            <li>Due to poor conversions to the English language,her height was 5ft3in while she is around 5ft3in or 5ft4in. </li>
+            <li>First, her name was Aeris in the original English release but in subsequent releases it has been changed to Aerith.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="images">
 
-      <h3>Trivia</h3>
-      <ul>
-        <li> Aerith and Sephiroth were suppossed to be siblings, then Lovers, then nothing in the final version of the game.</li>
-        <li><span class="spoiler">Aerith's death</span> is considered one of the most impacting moments in gaming history.  </li>
-        <li>Aerith is playful or somewhat flirty with Cloud, and the young man isn't harsh with her in comparison with other characters such as Jessie Rasberry. </li>
-        <li>"If Aerith is in the final battle, Sephiroth says "Can you not see your future? What hope have you? You cannot change it."" (Final Fantasy Wiki, Annotations)</li>
-        <li>Due to poor conversions to the English language,her height was 5ft3in while she is around 5ft3in or 5ft4in. </li>
-        <li>First, her name was Aeris in the original English release but in subsequent releases it has been changed to Aerith.</li>
-      </ul>
+        <h3>Pictures!</h3>
 
-      <h3>Pictures!</h3>
-
-      <img src="images/Aerith.webp" alt="Description" />
-      <p>Aerith as she appears in Final Fantasy VII Remake.</p>
-      <img src="images/aerithoriginal.webp" alt="">
-      <p>Aerith as she appears in the Original Final Fantasy VII.</p>
-      <img src="images/aerithsephiroth.webp" alt="Description" />
-      <p>Yoshitaka Amano's sketch depicting Aerith and Sephiroth.</p>
-      <img src="images/babyaerith.webp" alt="Description" />
-      <p>Young Aerith as she appears in Final Fantasy VII Remake.</p>
-      <img src="images/froggy.webp" alt="">
-      <p>Aerith in the frog state as she appears in the Remake.</p>
+        <img src="images/Aerith.webp" alt="Description" />
+        <p>Aerith as she appears in Final Fantasy VII Remake.</p>
+        <img src="images/aerithoriginal.webp" alt="">
+        <p>Aerith as she appears in the Original Final Fantasy VII.</p>
+        <img src="images/aerithsephiroth.webp" alt="Description" />
+        <p>Yoshitaka Amano's sketch depicting Aerith and Sephiroth.</p>
+        <img src="images/babyaerith.webp" alt="Description" />
+        <p>Young Aerith as she appears in Final Fantasy VII Remake.</p>
+        <img src="images/froggy.webp" alt="">
+        <p>Aerith in the frog state as she appears in the Remake.</p>
+      </div>
     </main>
 
     <footer>
